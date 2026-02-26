@@ -1,20 +1,16 @@
 public class pallindromeapp {
     static void main() {
-        String word = "madam";
+        String word = "monish";
         System.out.println("Input text: " + word);
-        int i,n;
-        boolean isPalindrome = true;
-        n = word.length() - 1;
-        for (i = 0; i < word.length()/2; i++) {
-            if (word.charAt(i) != word.charAt(n-i)){
-                isPalindrome=false;
-                break;
-            }
-        }
+        String reversed = "";
+        for (int i = word.length() - 1; i >= 0; i--) {
+            reversed = reversed + word.charAt(i);
+           }
+        boolean isPalindrome = word.equals(reversed);
         if(isPalindrome){
-            System.out.println("Is it a Palindrome? : true");
+            System.out.println(reversed + "\nis a palimdrome\n");
         }else{
-            System.out.println("IS it a Palindrome? : false");
+            System.out.println(reversed + "\nis not a palimdrome\n");
         }
 
     }

@@ -1,6 +1,7 @@
 public class PallinDromeApp {
     static void main() {
        String word = "madam";
+       System.out.println("Input text: " + word);
        int i,n;
        boolean isPalindrome = true;
        n = word.length() - 1;
